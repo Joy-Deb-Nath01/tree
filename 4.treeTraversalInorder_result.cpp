@@ -10,7 +10,7 @@ void inorder(Node *root)
 {
     if(root==nullptr)return;
     inorder(root->left);
-    cout<<root->data<<" ";
+    cout<<root->data<<" "; //! Notice:only when back from left the current root data is printed
     inorder(root->right);
 }
 int main()
